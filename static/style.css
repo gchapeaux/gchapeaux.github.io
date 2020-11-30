@@ -1,3 +1,5 @@
+/* GENERAL STYLE */
+
 :root {
     --theme-1: #171310;
     --theme-2: #00A86B;
@@ -11,6 +13,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: "Raleway";
+    font-weight: normal;
+    font-style: normal;
 
     padding-top: 3%;
     padding-bottom: 3%;
@@ -22,6 +27,77 @@ strong {
     font-size: 120%;
 }
 
+p {
+    font-size: 14pt;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Righteous";
+    src: url("./fonts/Righteous-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Cyrodiil";
+    src: url("./fonts/Cyrodiil.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cyrodiil";
+    src: url("./fonts/Cyrodiil Italic.otf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cyrodiil";
+    src: url("./fonts/Cyrodiil Bold.otf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cyrodiil";
+    src: url("./fonts/Cyrodiil Bold Italic.otf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* NAVBAR STYLE */
+
 .nav.navbar-nav {
     display: flex;
     justify-content: center;
@@ -30,8 +106,8 @@ strong {
 
 
 .navbar {
-
-    opacity: 0.75;
+    font-family: "Righteous";
+    opacity: 0.90;
     background: var(--theme-3);
 
 }
@@ -77,27 +153,21 @@ strong {
     color: var(--theme-1);
 }
 
+/* SITE BODY */
+
 .sbody {
     color: var(--theme-3);
     width: 95%;
-    margin-left : auto;
-    margin-right : auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#titretxt {
-    background: var(--theme-1);
-    opacity: 0.8;
-
-    text-align: center;
-    color: var(--theme-3);
-    line-height: 2;
-
-    width: 80%;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    margin-bottom: 3%;
+.bg1,
+.bg2 {
+    margin: 2% auto 2% auto;
+    width: 95%;
+    padding: 2% 4% 2% 4%;
 }
-
 
 .bg1 {
     background: var(--theme-2);
@@ -109,6 +179,36 @@ strong {
     color: var(--theme-2);
 }
 
+.itm {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.titretxt {
+    background: var(--theme-1);
+    opacity: 0.8;
+
+    text-align: center;
+    font-family: "Cyrodiil";
+    font-weight: "bold";
+    color: var(--theme-3);
+    line-height: 2;
+
+    width: 80%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-bottom: 3%;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* GAME SECTION */
+
 .card {
     background: var(--theme-3);
     color: var(--theme-1);
@@ -118,64 +218,30 @@ strong {
     color: var(--theme-4);
 }
 
-.itm {
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 4%;
-    padding-bottom: 4%;
+.gametitle {
+    background: var(--theme-1);
+    opacity: 0.8;
+
+    text-align: right;
+    color: var(--theme-3);
+    font-family: "Cyrodiil";
+    font-weight: bold;
+
+    width: 60%;
+    padding: 1% 5% 1% 1%;
+    margin: auto 0% 3% auto;
+}
+
+.carousel {
+    width: 75%;
+    margin: auto;
 }
 
 #blank {
-    min-height: 80px;    
+    min-height: 80px;
 }
 
-a[name] {
-    padding-top: 90px;
-    margin-top: -90px;
-    display: block;
-}
-
-@media screen and (min-width:600px) {
-
-    #lcomp {
-        columns: 2;
-    }
-
-}
-
-.btntxt {
-
-    text-decoration: underline;
-    color: var(--theme-2);
-
-}
-
-.btntxt:hover {
-
-    text-decoration: underline;
-    color: var(--theme-2);
-
-}
-
-.btntxt2 {
-
-    text-decoration: underline;
-    color: var(--theme-1);
-
-}
-
-.btntxt2:hover {
-
-    text-decoration: underline;
-    color: var(--theme-1);
-
-}
-
-p {
-    font-size: 14pt;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
+/* MOVE-TO-TOP BUTTON */
 
 #myBtn {
     display: none;
@@ -211,6 +277,35 @@ p {
     /* Add a dark-grey background on hover */
 }
 
+/*
+.btntxt {
+
+    text-decoration: underline;
+    color: var(--theme-2);
+
+}
+
+.btntxt:hover {
+
+    text-decoration: underline;
+    color: var(--theme-2);
+
+}
+
+.btntxt2 {
+
+    text-decoration: underline;
+    color: var(--theme-1);
+
+}
+
+.btntxt2:hover {
+
+    text-decoration: underline;
+    color: var(--theme-1);
+
+}
+
 .frame {
     display: block;
     width: 90vw;
@@ -237,3 +332,8 @@ p {
     color: var(--theme-1);
 
 }
+
+@media screen and (min-width:600px) {
+
+}
+*/
