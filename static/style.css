@@ -14,8 +14,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     font-family: "Raleway";
-    font-weight: normal;
-    font-style: normal;
 
     padding-top: 3%;
     padding-bottom: 3%;
@@ -192,13 +190,12 @@ p {
 
     text-align: center;
     font-family: "Cyrodiil";
-    font-weight: "bold";
     color: var(--theme-3);
     line-height: 2;
 
     width: 80%;
-    padding-bottom: 3%;
-    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-top: 2%;
     margin-bottom: 3%;
 }
 
@@ -225,7 +222,6 @@ p {
     text-align: right;
     color: var(--theme-3);
     font-family: "Cyrodiil";
-    font-weight: bold;
 
     width: 60%;
     padding: 1% 5% 1% 1%;
