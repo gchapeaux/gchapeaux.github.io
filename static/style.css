@@ -4,7 +4,8 @@
     --theme-1: #171310;
     --theme-2: #00A86B;
     --theme-3: #eaeaea;
-    --theme-4: #1B4D3E
+    --theme-4: #0a2e1d;
+    --theme-5: #2f5050;
 }
 
 body {
@@ -29,6 +30,10 @@ p {
     font-size: 14pt;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+
+a, a:hover {
+    text-decoration: none;
 }
 
 /* FONTS */
@@ -162,19 +167,44 @@ p {
 
 .bg1,
 .bg2 {
-    margin: 2% auto 2% auto;
+    margin: 1% auto 1% auto;
     width: 95%;
     padding: 2% 4% 2% 4%;
+    text-align: justify;
 }
 
 .bg1 {
     background: var(--theme-2);
     color: var(--theme-1);
+    border-radius: 40px 0 40px 0;
 }
 
 .bg2 {
     background: var(--theme-3);
     color: var(--theme-2);
+    border-radius: 0 40px 0 40px;
+}
+
+.bg1 a {
+    color:var(--theme-3);
+}
+.bg1 a:hover {
+    color:var(--theme-5);
+}
+.bg2 a {
+    color:var(--theme-4);
+}
+.bg2 a:hover {
+    color:var(--theme-5);
+}
+
+.sectiontitle {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3%;
+    padding-left: 10%;
+    font-family: "Cyrodiil";
+    font-size: 24pt;
 }
 
 .itm {
@@ -199,10 +229,6 @@ p {
     margin-bottom: 3%;
 }
 
-.quote {
-    font-style: italic;
-    font-weight: bold;
-}
 
 /* GAME SECTION */
 
@@ -235,6 +261,47 @@ p {
 
 #blank {
     min-height: 80px;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16pt;
+}
+
+.teamtable {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.teamtable th, .teamtable td {
+    padding: 1%;
+    border-bottom: 1px double var(--theme-2);
+}
+
+.teamtable th {
+    text-align: center;
+    font-size: 16pt;
+}
+
+.spectable {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+.spectable th, .spectable td {
+    border-left: 1px solid var(--theme-1);
+    border-right: 1px solid var(--theme-1);
+}
+
+.award {
+    font-size: 16pt;
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
 
 /* MOVE-TO-TOP BUTTON */
