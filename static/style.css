@@ -229,6 +229,21 @@ a, a:hover {
     margin-bottom: 3%;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:
+    space-between;
+    flex-wrap: wrap;
+    height: min-content;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
 
 /* GAME SECTION */
 
