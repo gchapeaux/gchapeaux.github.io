@@ -304,6 +304,12 @@ a, a:hover {
     text-align: center;
 }
 
+.frame {
+    display: flex;
+    justify-content: space-around;
+    margin: 2% auto 2% auto;
+}
+
 /* MOVE-TO-TOP BUTTON */
 
 #myBtn {
