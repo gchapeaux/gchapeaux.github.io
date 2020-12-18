@@ -32,7 +32,8 @@ p {
     padding-bottom: 1%;
 }
 
-a, a:hover {
+a,
+a:hover {
     text-decoration: none;
 }
 
@@ -186,16 +187,19 @@ a, a:hover {
 }
 
 .bg1 a {
-    color:var(--theme-3);
+    color: var(--theme-3);
 }
+
 .bg1 a:hover {
-    color:var(--theme-5);
+    color: var(--theme-5);
 }
+
 .bg2 a {
-    color:var(--theme-4);
+    color: var(--theme-4);
 }
+
 .bg2 a:hover {
-    color:var(--theme-5);
+    color: var(--theme-5);
 }
 
 .sectiontitle {
@@ -233,7 +237,7 @@ a, a:hover {
     display: flex;
     flex-direction: row;
     justify-content:
-    space-between;
+        space-between;
     flex-wrap: wrap;
     height: min-content;
     align-items: center;
@@ -241,9 +245,9 @@ a, a:hover {
 
 @media screen and (max-width: 1000px) {
     .flex-container {
-      flex-direction: column;
+        flex-direction: column;
     }
-  }
+}
 
 /* GAME SECTION */
 
@@ -291,7 +295,8 @@ a, a:hover {
     text-align: center;
 }
 
-.teamtable th, .teamtable td {
+.teamtable th,
+.teamtable td {
     padding: 1%;
     border-bottom: 1px double var(--theme-2);
 }
@@ -307,7 +312,9 @@ a, a:hover {
     border-collapse: collapse;
     text-align: center;
 }
-.spectable th, .spectable td {
+
+.spectable th,
+.spectable td {
     border-left: 1px solid var(--theme-1);
     border-right: 1px solid var(--theme-1);
 }
@@ -323,6 +330,95 @@ a, a:hover {
     display: flex;
     justify-content: space-around;
     margin: 2% auto 2% auto;
+}
+
+/* TIMELINE */
+
+
+.timeline {
+    --uiTimelineMainColor: var(--theme-4);
+    --uiTimelineSecondaryColor: var(--theme-3);
+    --timelineMainColor: var(--theme-1);
+
+    border-left: 5px solid var(--uiTimelineMainColor);
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+
+    display: var(--timelineDisplay, grid);
+    grid-row-gap: var(--timelineGroupsGap, 2rem);
+}
+
+.timeline__section {
+    --timePadding: var(--timelineYearPadding, 0.5rem 1.5rem);
+    --timeColor: var(--uiTimelineSecondaryColor);
+    --timeBackgroundColor: var(--uiTimelineMainColor);
+    --timeFontWeight: 400;
+    --timeFontSize: 1.25rem;
+
+    margin-bottom: 1.25rem;
+    border-radius: 0% 0% 1rem 0%;
+}
+
+.timeline__title {
+    display: inline-flex;
+    padding: var(--timePadding, 0.25rem 1.25rem 0.25rem);
+    background-color: var(--timeBackgroundColor, var(--uiTimelineSecondaryColor));
+
+    font-size: var(--timeFontSize, 1.5rem);
+    font-weight: var(--timeFontWeight, 700);
+    text-transform: uppercase;
+    color: var(--timeColor, currentColor);
+}
+
+.timeline__subtitle {
+    display: inline-flex;
+    padding: var(--timePadding, 0.25rem 1.25rem 0.25rem);
+    background-color: var(--timeBackgroundColor, var(--uiTimelineSecondaryColor));
+
+    font-size: var(--timeFontSize, 1.25rem);
+    font-weight: var(--timeFontWeight, 500);
+    font-style: italic;
+    color: var(--timeColor, currentColor);
+}
+
+.card__content {
+    margin-top: 0.5rem;
+}
+
+.card__header {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.timeline__cards {
+    display: grid;
+    row-gap: 1.5rem;
+
+    overflow: hidden;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.timeline__card {
+    position: relative;
+    margin-left: 3rem;
+
+    border-radius: 5px;
+    border-left: 5px solid var(--uiTimelineMainColor);
+    background-color: var(--uiTimelineSecondaryColor);
+
+    padding: 1.5rem 1.5rem 1.25rem;
+}
+
+.timeline__card::before {
+    content: "";
+    width: 50%;
+    height: 5px;
+    background-color: var(--uiTimelineMainColor);
+
+    position: absolute;
+    top: 1rem;
+    left: -50%;
 }
 
 /* MOVE-TO-TOP BUTTON */
