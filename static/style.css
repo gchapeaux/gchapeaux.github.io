@@ -2,10 +2,12 @@
 
 :root {
     --theme-1: #171310;
-    --theme-2: #00A86B;
+    --theme-2: #00ca70;
     --theme-3: #eaeaea;
     --theme-4: #0a2e1d;
     --theme-5: #2f5050;
+    --theme-6: #008830;
+    --theme-7: #172510;
 }
 
 body {
@@ -119,13 +121,14 @@ a:hover {
 .navbar:hover {
 
     opacity: 0.95;
-    background: var(--theme-2) !important;
+    background: var(--theme-6) !important;
 
 }
 
+
 .nav-link:hover {
 
-    color: (var(--theme-1)) !important;
+    color: var(--theme-1) !important;
 
 }
 
@@ -182,7 +185,7 @@ a:hover {
 
 .bg2 {
     background: var(--theme-3);
-    color: var(--theme-2);
+    color: var(--theme-4);
     border-radius: 0 40px 0 40px;
 }
 
@@ -195,7 +198,7 @@ a:hover {
 }
 
 .bg2 a {
-    color: var(--theme-4);
+    color: var(--theme-7);
 }
 
 .bg2 a:hover {
@@ -343,6 +346,8 @@ a:hover {
     border-left: 5px solid var(--uiTimelineMainColor);
     padding-top: 1rem;
     padding-bottom: 1.5rem;
+    width: 90%;
+    margin: auto;
 
     display: var(--timelineDisplay, grid);
     grid-row-gap: var(--timelineGroupsGap, 2rem);
@@ -353,7 +358,7 @@ a:hover {
     --timeColor: var(--uiTimelineSecondaryColor);
     --timeBackgroundColor: var(--uiTimelineMainColor);
     --timeFontWeight: 400;
-    --timeFontSize: 1.25rem;
+    --timeFontSize: 14pt;
 
     margin-bottom: 1.25rem;
     border-radius: 0% 0% 1rem 0%;
@@ -364,7 +369,7 @@ a:hover {
     padding: var(--timePadding, 0.25rem 1.25rem 0.25rem);
     background-color: var(--timeBackgroundColor, var(--uiTimelineSecondaryColor));
 
-    font-size: var(--timeFontSize, 1.5rem);
+    font-size: var(--timeFontSize, 16pt);
     font-weight: var(--timeFontWeight, 700);
     text-transform: uppercase;
     color: var(--timeColor, currentColor);
@@ -375,7 +380,7 @@ a:hover {
     padding: var(--timePadding, 0.25rem 1.25rem 0.25rem);
     background-color: var(--timeBackgroundColor, var(--uiTimelineSecondaryColor));
 
-    font-size: var(--timeFontSize, 1.25rem);
+    font-size: var(--timeFontSize, 14ptm);
     font-weight: var(--timeFontWeight, 500);
     font-style: italic;
     color: var(--timeColor, currentColor);
@@ -383,11 +388,29 @@ a:hover {
 
 .card__content {
     margin-top: 0.5rem;
+    font-size: 14pt;
+}
+
+.card__comp {
+    padding-bottom: 1rem;
+}
+.card__desc {
+    font-size: 12pt;
+    padding-left: 1rem;
+    color: var(--theme-5);
 }
 
 .card__header {
     display: inline-flex;
     flex-direction: column;
+}
+
+.card__content a {
+    color: var(--theme-4);
+}
+
+.card__content a:hover {
+    color: var(--theme-7);
 }
 
 .timeline__cards {
