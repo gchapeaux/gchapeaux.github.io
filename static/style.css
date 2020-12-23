@@ -1,13 +1,12 @@
 /* GENERAL STYLE */
 
 :root {
-    --theme-1: #171310;
-    --theme-2: #00ca70;
-    --theme-3: #eaeaea;
-    --theme-4: #0a2e1d;
-    --theme-5: #2f5050;
-    --theme-6: #008830;
-    --theme-7: #172510;
+    --theme-bg1: #FEE483;
+    --theme-bg2: #FCE7EA;
+    --theme-main1: #161212;
+    --theme-main2: #0F0805;
+    --theme-hover: #CC8500;
+    --theme-link: #A17E02;
 }
 
 body {
@@ -114,21 +113,21 @@ a:hover {
 .navbar {
     font-family: "Righteous";
     opacity: 0.90;
-    background: var(--theme-3);
+    background: var(--theme-bg2);
 
 }
 
 .navbar:hover {
 
     opacity: 0.95;
-    background: var(--theme-6) !important;
+    background: var(--theme-hover) !important;
 
 }
 
 
 .nav-link:hover {
 
-    color: var(--theme-1) !important;
+    color: var(--theme-main2) !important;
 
 }
 
@@ -139,7 +138,7 @@ a:hover {
 
 .dropdown-item.active,
 .dropdown-item:focus {
-    background-color: var(--theme-1) !important;
+    background-color: var(--theme-main2) !important;
 }
 
 .brndtitle,
@@ -149,21 +148,21 @@ a:hover {
 
 .brndtitle {
     font-size: 100%;
-    color: var(--theme-1);
+    color: var(--theme-main2);
     margin-bottom: 3px;
 }
 
 .brndsubtitle {
-    border-top: 1px solid var(--theme-1);
+    border-top: 1px solid var(--theme-main2);
     border-collapse: collapse;
     font-size: 70%;
-    color: var(--theme-1);
+    color: var(--theme-main2);
 }
 
 /* SITE BODY */
 
 .sbody {
-    color: var(--theme-3);
+    color: var(--theme-bg2);
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -178,31 +177,23 @@ a:hover {
 }
 
 .bg1 {
-    background: var(--theme-2);
-    color: var(--theme-1);
+    background: var(--theme-bg1);
+    color: var(--theme-main1);
     border-radius: 40px 0 40px 0;
 }
 
 .bg2 {
-    background: var(--theme-3);
-    color: var(--theme-4);
+    background: var(--theme-bg2);
+    color: var(--theme-main2);
     border-radius: 0 40px 0 40px;
 }
 
-.bg1 a {
-    color: var(--theme-3);
+.bg1 a, .bg2 a {
+    color: var(--theme-link);
 }
 
-.bg1 a:hover {
-    color: var(--theme-5);
-}
-
-.bg2 a {
-    color: var(--theme-7);
-}
-
-.bg2 a:hover {
-    color: var(--theme-5);
+.bg1 a:hover, .bg2 a:hover {
+    color: var(--theme-hover);
 }
 
 .sectiontitle {
@@ -221,12 +212,12 @@ a:hover {
 }
 
 .titretxt {
-    background: var(--theme-1);
+    background: var(--theme-main2);
     opacity: 0.8;
 
     text-align: center;
     font-family: "Cyrodiil";
-    color: var(--theme-3);
+    color: var(--theme-bg2);
     line-height: 2;
 
     width: 80%;
@@ -259,20 +250,20 @@ a:hover {
 /* GAME SECTION */
 
 .card {
-    background: var(--theme-3);
-    color: var(--theme-1);
+    background: var(--theme-bg2);
+    color: var(--theme-main1);
 }
 
 .card:hover {
-    color: var(--theme-4);
+    color: var(--theme-hover);
 }
 
 .gametitle {
-    background: var(--theme-1);
+    background: var(--theme-main2);
     opacity: 0.8;
 
     text-align: right;
-    color: var(--theme-3);
+    color: var(--theme-bg2);
     font-family: "Cyrodiil";
 
     width: 60%;
@@ -305,7 +296,7 @@ a:hover {
 .teamtable th,
 .teamtable td {
     padding: 1%;
-    border-bottom: 1px double var(--theme-2);
+    border-bottom: 1px double var(--theme-main2);
 }
 
 .teamtable th {
@@ -316,14 +307,16 @@ a:hover {
 .spectable {
     width: 80%;
     margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border-collapse: collapse;
     text-align: center;
 }
 
 .spectable th,
 .spectable td {
-    border-left: 1px solid var(--theme-1);
-    border-right: 1px solid var(--theme-1);
+    border-left: 1px solid var(--theme-main1);
+    border-right: 1px solid var(--theme-main1);
 }
 
 .award {
@@ -343,16 +336,16 @@ a:hover {
 
 
 .timeline {
-    --uiTimelineMainColor: var(--theme-4);
-    --uiTimelineSecondaryColor: var(--theme-3);
-    --timelineMainColor: var(--theme-1);
+    --uiTimelineMainColor: var(--theme-main2);
+    --uiTimelineSecondaryColor: var(--theme-bg2);
+    --timelineMainColor: var(--theme-main1);
 
     border-left: 5px solid var(--uiTimelineMainColor);
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
-    width: 90%;
+    width: 95%;
     margin: auto;
 
     display: var(--timelineDisplay, grid);
@@ -403,7 +396,7 @@ a:hover {
 .card__desc {
     font-size: 12pt;
     padding-left: 1rem;
-    color: var(--theme-5);
+    color: var(--theme-hover);
 }
 
 .card__header {
@@ -412,7 +405,7 @@ a:hover {
 }
 
 .card__content a {
-    color: var(--theme-4);
+    color: var(--theme-main2);
 }
 
 .card__content a:hover {
@@ -467,7 +460,7 @@ a:hover {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: var(--theme-1);
+    background-color: var(--theme-main2);
     /* Set a background color */
     cursor: pointer;
     /* Add a mouse pointer on hover */
@@ -478,67 +471,6 @@ a:hover {
 }
 
 #myBtn:hover {
-    background-color: var(--theme-7);
+    background-color: var(--theme-main1);
     /* Add a dark-grey background on hover */
 }
-
-/*
-.btntxt {
-
-    text-decoration: underline;
-    color: var(--theme-2);
-
-}
-
-.btntxt:hover {
-
-    text-decoration: underline;
-    color: var(--theme-2);
-
-}
-
-.btntxt2 {
-
-    text-decoration: underline;
-    color: var(--theme-1);
-
-}
-
-.btntxt2:hover {
-
-    text-decoration: underline;
-    color: var(--theme-1);
-
-}
-
-.frame {
-    display: block;
-    width: 90vw;
-    height: 80vh;
-    max-width: 100%;
-    margin: auto;
-    padding: 0;
-    border: 0 none;
-    box-sizing: border-box;
-}
-
-#linkdev {
-
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--theme-2);
-
-}
-
-#linkdev:hover {
-
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--theme-1);
-
-}
-
-@media screen and (min-width:600px) {
-
-}
-*/
