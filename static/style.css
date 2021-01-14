@@ -120,7 +120,6 @@ a:hover {
 .navbar:hover {
 
     opacity: 0.95;
-    background: var(--theme-hover) !important;
 
 }
 
@@ -174,18 +173,16 @@ a:hover {
     width: 95%;
     padding: 2% 4% 2% 4%;
     text-align: justify;
+    border-radius: 0 40px 0 40px;
 }
 
 .bg1 {
     background: var(--theme-bg1);
     color: var(--theme-main1);
-    border-radius: 40px 0 40px 0;
 }
-
 .bg2 {
     background: var(--theme-bg2);
     color: var(--theme-main2);
-    border-radius: 0 40px 0 40px;
 }
 
 .bg1 a, .bg2 a {
@@ -213,14 +210,14 @@ a:hover {
 
 .titretxt {
     background: var(--theme-main2);
-    opacity: 0.8;
+    opacity: 0.85;
 
     text-align: center;
     font-family: "Cyrodiil";
     color: var(--theme-bg2);
     line-height: 2;
 
-    width: 80%;
+    width: 70%;
     padding-bottom: 2%;
     padding-top: 2%;
     margin-bottom: 3%;
@@ -260,13 +257,13 @@ a:hover {
 
 .gametitle {
     background: var(--theme-main2);
-    opacity: 0.8;
+    opacity: 0.85;
 
     text-align: right;
     color: var(--theme-bg2);
     font-family: "Cyrodiil";
 
-    width: 60%;
+    width: 55%;
     padding: 1% 5% 1% 1%;
     margin: auto 0% 3% auto;
 }
