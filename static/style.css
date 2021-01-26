@@ -255,7 +255,7 @@ a:hover {
     width: 20px;
 }
 
-/* GAME SECTION */
+/* PROJECT SECTION */
 
 .card {
     background: var(--theme-bg2);
@@ -274,7 +274,7 @@ a:hover {
     color: var(--theme-hover);
 }
 
-.gametitle {
+.projecttitle {
     background: var(--theme-main2);
     opacity: 0.95;
 
