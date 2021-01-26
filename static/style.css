@@ -414,11 +414,11 @@ a:hover {
 }
 
 .card__content a {
-    color: var(--theme-main2);
+    color: var(--theme-link);
 }
 
 .card__content a:hover {
-    color: var(--theme-7);
+    color: var(--theme-main2);
 }
 
 .timeline__cards {
