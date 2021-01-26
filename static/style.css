@@ -18,7 +18,7 @@ body {
     font-family: "Raleway";
 
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 
 }
 
@@ -30,7 +30,7 @@ strong {
 p {
     font-size: 14pt;
     padding-top: 1%;
-    padding-bottom: 1%;
+    padding-bottom: 1rem;
 }
 
 a,
@@ -167,6 +167,10 @@ a:hover {
     margin-right: auto;
 }
 
+#blank {
+    min-height: 35px;
+}
+
 .bg1,
 .bg2 {
     margin: 2rem auto 2rem auto;
@@ -174,6 +178,10 @@ a:hover {
     padding: 2rem 3rem 2rem 3rem;
     text-align: justify;
     border-radius: 0 40px 0 40px;
+}
+
+.bglast {
+    margin: 2rem auto 0 auto
 }
 
 .bg1 {
@@ -221,6 +229,7 @@ a:hover {
     padding-bottom: 1%;
     padding-top: 1%;
     margin-bottom: 2%;
+    margin-top: 45px;
 
     border-radius: 0 0 40px 0;
 }
@@ -275,7 +284,7 @@ a:hover {
 
     width: 55%;
     padding: 1% 5% 1% 1%;
-    margin: auto 0% 3% auto;
+    margin: 45px 0% 3% auto;
 
     border-radius: 0 0 0 40px;
 }
@@ -283,10 +292,6 @@ a:hover {
 .carousel {
     width: 75%;
     margin: auto;
-}
-
-#blank {
-    min-height: 80px;
 }
 
 .quote {
