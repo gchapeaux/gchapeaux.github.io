@@ -137,6 +137,7 @@ a:hover {
 
 .dropdown-item.active,
 .dropdown-item:focus {
+    color: #fff;
     background-color: var(--theme-main2) !important;
 }
 
