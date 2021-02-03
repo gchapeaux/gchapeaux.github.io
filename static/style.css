@@ -291,8 +291,9 @@ a:hover {
 }
 
 .carousel {
-    width: 75%;
-    margin: auto;
+    width: 80%;
+    border: 2px ridge var(--theme-main1);
+    margin: 1.5rem auto;
 }
 
 .quote {
@@ -482,6 +483,11 @@ a:hover {
 
 .schoolcard-desc {
     margin: auto 0;
+}
+
+.tlcinterface {
+    width: 60%;
+    margin: 1rem auto;
 }
 
 /* MOVE-TO-TOP BUTTON */

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/style.css" type="text/css" />
+    <link rel="icon" href="../../static/img/logo.svg">
+    <meta charset="utf-8" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../../static/scripts/topbutton.js"></script>
+
+    <title>TI | Tests Web</title>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="load-navbar"
+        style="position: fixed; top: 0; width: 100%; z-index: 1;"></nav>
+    <script type="text/javascript" src="../../static/scripts/load-navbar.js" data-static="../../static" ,
+        data-language="fr" data-root="../" data-current="it"></script>
+
+    <div id="blank"></div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="../.././static/img/uparrow.svg" width="30" height="30" \>
+    </button>
+
+    <div class="projecttitle">
+        <h2 style="margin-bottom: 0; font-size: 32pt;"><strong>T</strong>ests <strong>W</strong>eb</h2>
+    </div>
+
+    <div class="sbody">
+        <div class="bg1">
+            <div class="sectiontitle">Description du projet</div>
+            <p><b>Stage : </b>Printemps 2019 - <a target="_blank" rel="noreferrer noopener"
+                href="https://www.car-expresso.com/">Car Expresso</a>
+            </p>
+            <p>
+                Ce projet fait partie de la Mission Courte, un stage en équipe à IMT Atlantique : nous travaillions pendant un mois pour 
+                une entreprise sur une mission qu'elle nous avait confiée. La start-up pour laquelle nous travaillion, Car Expresso, 
+                propose un outil en ligne permettant aux utilisateurs de revendre leur vieille voiture ou d'acheter une voiture d'occasion 
+                qui correspond à leurs besoins.
+            </p>
+            <p>
+                Notre objectif durant ce projet était de mettre en place une campagne de tests pour leur outil. La première étape a été 
+                la réalisation d'un état de l'art des différents outils de test sur le marché, et la proposition d'un outil à utiliser. 
+                Notre choix s'est porté sur <a target="_blank" rel="noreferrer noopener" href="https://www.cypress.io/">Cypress</a>, 
+                un cadriciel libre de droits javascript pour les tests web.
+            </p>
+            <p>
+                La deuxième étape de ce projet a été la mise en place d'une campagne de tests, pour comprendre le fonctionnement de Cypress 
+                et le présenter à l'équipe TI de Car Expresso. Pour cette étape, nous avons testé la réponse du site à différentes entrées dans 
+                un formulaire de recherche parmis une base de données utilisateurs : face à des informations correctes, des informations avec le 
+                mauvais format, avec des caractères spéciaux, de longues chaînes de caractères...
+            </p>
+        </div>
+        <div class="bg1">
+            <div class="sectiontitle">Captures d'écran d'un test web</div>
+            <div id="carouselST" class="carousel slide" data-ride="carousel"
+                style="width: 80%;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselST" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselST" data-slide-to="1"></li>
+                    <li data-target="#carouselST" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../../static/img/it/wt1.jpg" class="d-block w-100" alt="Style Transfer example 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../static/img/it/wt2.jpg" class="d-block w-100" alt="Style Transfer example 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../static/img/it/wt3.jpg" class="d-block w-100" alt="Style Transfer example 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselST" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Précédent</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselST" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
+            </div>
+        </div>
+        <div class="bg1">
+            <div class="sectiontitle">Références</div>
+            <ul style="list-style-type:square">
+                <li><a target="_blank" rel="noreferrer noopener" href="https://github.com/gchapeaux/CarExpressoTest">Lien Github</a> du projet</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+
+
+</html>
